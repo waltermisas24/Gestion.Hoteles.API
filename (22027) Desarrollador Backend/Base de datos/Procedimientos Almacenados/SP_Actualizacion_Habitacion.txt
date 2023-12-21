@@ -1,0 +1,29 @@
+CREATE PROCEDURE ActualizarHabitacion
+@Id INT,
+@Hotel_Id INT,
+@Nombre NVARCHAR(MAX),
+@Costo FLOAT,
+@Tipo_Habitacion NVARCHAR(MAX),
+@Impuesto FLOAT,
+@Cantidad_Huespedes INT,
+@Estado INT
+
+AS
+BEGIN
+
+	--Actualizar datos de la habitacion
+	UPDATE dbo.Habitaciones
+	SET Hotel_Id = @Hotel_Id, 
+		Nombre= @Nombre, 
+		Costo = @Costo, 
+		Tipo_Habitacion = @Tipo_Habitacion, 
+		Impuesto = @Impuesto, 
+		Cantidad_Huespedes = @Cantidad_Huespedes, 
+		Estado = @Estado
+	WHERE Id = @Id;
+
+	--Retornar los datos insertados junto con el ID
+	SELECT Id, Hotel_Id AS IdHotel, Nombre, Costo, Tipo_Habitacion AS Tipo, Impuesto, Cantidad_Huespedes AS CantidadHuespedes, Estado
+	FROM dbo.Habitaciones
+	WHERE Id = @Id;
+END;

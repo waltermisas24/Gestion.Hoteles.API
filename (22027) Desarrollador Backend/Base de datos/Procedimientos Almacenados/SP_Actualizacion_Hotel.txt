@@ -1,0 +1,21 @@
+CREATE PROCEDURE ActualizarHotel
+@Id INT,
+@Nombre NVARCHAR(MAX),
+@Ubicacion INT,
+@Estado INT
+
+AS
+BEGIN
+
+	--Actualizar datos del hotel
+	UPDATE dbo.Hoteles
+	SET Nombre = @Nombre, 
+		Ubicacion = @Ubicacion, 
+		Estado = @Estado
+	WHERE Id = @Id;
+
+	--Retornar los datos insertados junto con el ID
+	SELECT Id, Nombre, Ubicacion, Estado
+	FROM dbo.Hoteles
+	WHERE Id = @Id;
+END;

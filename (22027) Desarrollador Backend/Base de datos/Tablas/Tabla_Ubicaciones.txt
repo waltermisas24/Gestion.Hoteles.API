@@ -1,0 +1,19 @@
+USE [PruebaTecnicaTurismo]
+GO
+
+/****** Object:  Table [dbo].[Ubicaciones]    Script Date: 21/12/2023 4:03:40 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Ubicaciones](
+	[Id] [int] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Ubicaciones] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO

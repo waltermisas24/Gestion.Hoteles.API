@@ -1,0 +1,25 @@
+CREATE PROCEDURE InsertarHabitacion
+@Hotel_Id INT,
+@Nombre NVARCHAR(MAX),
+@Costo FLOAT,
+@Tipo_Habitacion NVARCHAR(MAX),
+@Impuesto FLOAT,
+@Cantidad_Huespedes INT,
+@Estado INT
+
+AS
+BEGIN
+	DECLARE @HabitacionID INT;
+
+	--Insertar datos de la habitacion
+	INSERT INTO dbo.Habitaciones(Hotel_Id, Nombre, Costo, Tipo_Habitacion, Impuesto, Cantidad_Huespedes, Estado)
+	VALUES (@Hotel_Id, @Nombre, @Costo, @Tipo_Habitacion, @Impuesto, @Cantidad_Huespedes, @Estado);
+
+	--Obtener el ID de la habitacion Nueva
+	SET @HabitacionID = SCOPE_IDENTITY();
+
+	--Retornar los datos insertados junto con el ID
+	SELECT Id, Hotel_Id AS IdHotel, Nombre, Costo, Tipo_Habitacion AS Tipo, Impuesto, Cantidad_Huespedes AS CantidadHuespedes, Estado
+	FROM dbo.Habitaciones
+	WHERE Id = @HabitacionID;
+END;

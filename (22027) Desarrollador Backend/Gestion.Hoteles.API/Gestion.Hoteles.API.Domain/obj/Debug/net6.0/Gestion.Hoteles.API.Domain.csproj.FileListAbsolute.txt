@@ -1,0 +1,12 @@
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\bin\Debug\net6.0\Gestion.Hoteles.API.Domain.deps.json
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\bin\Debug\net6.0\Gestion.Hoteles.API.Domain.dll
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\bin\Debug\net6.0\Gestion.Hoteles.API.Domain.pdb
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.csproj.AssemblyReference.cache
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.AssemblyInfoInputs.cache
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.AssemblyInfo.cs
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.csproj.CoreCompileInputs.cache
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.dll
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\refint\Gestion.Hoteles.API.Domain.dll
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\Gestion.Hoteles.API.Domain.pdb
+C:\Users\walte\OneDrive\Documentos\Repos\Gestion.Hoteles.API\Gestion.Hoteles.API.Domain\obj\Debug\net6.0\ref\Gestion.Hoteles.API.Domain.dll

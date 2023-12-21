@@ -1,0 +1,17 @@
+CREATE PROCEDURE EliminadoLogicoHabitacion
+@Id INT,
+@Estado INT
+
+AS
+BEGIN
+
+	--Actualizar datos de la habitacion
+	UPDATE dbo.Habitaciones
+	SET Estado = @Estado
+	WHERE Id = @Id;
+
+	--Retornar los datos insertados junto con el ID
+	SELECT Id, Hotel_Id AS IdHotel, Nombre, Costo, Tipo_Habitacion AS Tipo, Impuesto, Cantidad_Huespedes AS CantidadHuespedes, Estado
+	FROM dbo.Habitaciones
+	WHERE Id = @Id;
+END;

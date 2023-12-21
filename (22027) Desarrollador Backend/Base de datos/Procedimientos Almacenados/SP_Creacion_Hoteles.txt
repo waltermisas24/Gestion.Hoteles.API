@@ -1,0 +1,21 @@
+CREATE PROCEDURE InsertarHotel
+@Nombre NVARCHAR(MAX),
+@Ubicacion INT,
+@Estado INT
+
+AS
+BEGIN
+	DECLARE @HotelID INT;
+
+	--Insertar datos del hotel
+	INSERT INTO dbo.Hoteles(Nombre, Ubicacion, Estado)
+	VALUES (@Nombre, @Ubicacion, @Estado);
+
+	--Obtener el ID del hotel Nuevo
+	SET @HotelID = SCOPE_IDENTITY();
+
+	--Retornar los datos insertados junto con el ID
+	SELECT Id, Nombre, Ubicacion, Estado
+	FROM dbo.Hoteles
+	WHERE Id = @HotelID;
+END;
